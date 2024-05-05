@@ -1,0 +1,56 @@
+body {
+    background-image: url("background.jpg");
+    object-fit: auto;
+    overflow: hidden;
+    width: 1200px;
+    height: 700px;
+}
+.container {
+    max-width: 1200px;
+    max-height: 900px;
+
+}
+
+.rocket {
+    height: 200px;
+    width: 200px;
+    margin-left: 250px;
+    margin-top: 550px;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes mymove {
+    0%   {bottom: 0px;}
+    100% {bottom:550px}
+}
+.tree {
+    height: 300px;
+    width: 200px;
+    margin-left: 310px;
+    margin-bottom: 80px;
+}
+.tree:hover {height: 200px;
+    width: 200px;}
+
+.planet {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 550px;
+    animation: planet 3s linear infinite;
+    
+}
+@keyframes planet {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+
+}
+
+
